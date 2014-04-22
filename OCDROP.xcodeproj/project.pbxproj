@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F2EA655366424E899B1953 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8628F12F0C4D09ACAF7C19 /* libPods.a */; };
 		4619845119048DAF00EB4EA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4619845019048DAF00EB4EA6 /* Cocoa.framework */; };
 		4619845B19048DAF00EB4EA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4619845919048DAF00EB4EA6 /* InfoPlist.strings */; };
 		4619845D19048DAF00EB4EA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619845C19048DAF00EB4EA6 /* main.m */; };
@@ -18,6 +19,12 @@
 		4619847119048DAF00EB4EA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4619845019048DAF00EB4EA6 /* Cocoa.framework */; };
 		4619847919048DAF00EB4EA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4619847719048DAF00EB4EA6 /* InfoPlist.strings */; };
 		4619847B19048DAF00EB4EA6 /* OCDROPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619847A19048DAF00EB4EA6 /* OCDROPTests.m */; };
+		469D94C619055A700061823C /* OCStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 469D94C519055A700061823C /* OCStatusItemView.m */; };
+		469D94D2190570860061823C /* DAVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469D94CD190570410061823C /* DAVKit.framework */; };
+		469D94D7190579C30061823C /* OCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 469D94D6190579C30061823C /* OCSettings.m */; };
+		469D94DA190593890061823C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469D94D9190593890061823C /* Security.framework */; };
+		469D94DB19059C8A0061823C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4619845519048DAF00EB4EA6 /* Foundation.framework */; };
+		469D94DD19059C920061823C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469D94DC19059C920061823C /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4619844C19048DAF00EB4EA6;
 			remoteInfo = OCDROP;
+		};
+		469D94CC190570410061823C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469D94C7190570410061823C /* DAVKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = DAVKit;
+		};
+		469D94CE190570410061823C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469D94C7190570410061823C /* DAVKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9FF77EC121C6F51001250C7;
+			remoteInfo = Tests;
+		};
+		469D94D01905707E0061823C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 469D94C7190570410061823C /* DAVKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = DAVKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,6 +78,15 @@
 		4619847619048DAF00EB4EA6 /* OCDROPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCDROPTests-Info.plist"; sourceTree = "<group>"; };
 		4619847819048DAF00EB4EA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4619847A19048DAF00EB4EA6 /* OCDROPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDROPTests.m; sourceTree = "<group>"; };
+		469D94C419055A700061823C /* OCStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCStatusItemView.h; sourceTree = "<group>"; };
+		469D94C519055A700061823C /* OCStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCStatusItemView.m; sourceTree = "<group>"; };
+		469D94C7190570410061823C /* DAVKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DAVKit.xcodeproj; path = DAVKit/DAVKit.xcodeproj; sourceTree = "<group>"; };
+		469D94D5190579C30061823C /* OCSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCSettings.h; sourceTree = "<group>"; };
+		469D94D6190579C30061823C /* OCSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCSettings.m; sourceTree = "<group>"; };
+		469D94D9190593890061823C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		469D94DC19059C920061823C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5B8628F12F0C4D09ACAF7C19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9846681F34940A3B060606F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +94,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469D94DD19059C920061823C /* CoreFoundation.framework in Frameworks */,
+				469D94DB19059C8A0061823C /* Foundation.framework in Frameworks */,
+				469D94DA190593890061823C /* Security.framework in Frameworks */,
+				469D94D2190570860061823C /* DAVKit.framework in Frameworks */,
 				4619845119048DAF00EB4EA6 /* Cocoa.framework in Frameworks */,
+				00F2EA655366424E899B1953 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,10 +118,12 @@
 		4619844419048DAF00EB4EA6 = {
 			isa = PBXGroup;
 			children = (
+				469D94C7190570410061823C /* DAVKit.xcodeproj */,
 				4619845619048DAF00EB4EA6 /* OCDROP */,
 				4619847419048DAF00EB4EA6 /* OCDROPTests */,
 				4619844F19048DAF00EB4EA6 /* Frameworks */,
 				4619844E19048DAF00EB4EA6 /* Products */,
+				E9846681F34940A3B060606F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +139,12 @@
 		4619844F19048DAF00EB4EA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				469D94DC19059C920061823C /* CoreFoundation.framework */,
+				469D94D9190593890061823C /* Security.framework */,
 				4619845019048DAF00EB4EA6 /* Cocoa.framework */,
 				4619846F19048DAF00EB4EA6 /* XCTest.framework */,
 				4619845219048DAF00EB4EA6 /* Other Frameworks */,
+				5B8628F12F0C4D09ACAF7C19 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +165,10 @@
 				4619846219048DAF00EB4EA6 /* AppDelegate.h */,
 				4619846319048DAF00EB4EA6 /* AppDelegate.m */,
 				4619846519048DAF00EB4EA6 /* MainMenu.xib */,
+				469D94C419055A700061823C /* OCStatusItemView.h */,
+				469D94C519055A700061823C /* OCStatusItemView.m */,
+				469D94D5190579C30061823C /* OCSettings.h */,
+				469D94D6190579C30061823C /* OCSettings.m */,
 				4619846819048DAF00EB4EA6 /* Images.xcassets */,
 				4619845719048DAF00EB4EA6 /* Supporting Files */,
 			);
@@ -154,6 +205,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		469D94C8190570410061823C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				469D94CD190570410061823C /* DAVKit.framework */,
+				469D94CF190570410061823C /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,13 +221,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4619847E19048DAF00EB4EA6 /* Build configuration list for PBXNativeTarget "OCDROP" */;
 			buildPhases = (
+				3C4CA2C5F137427CA2C952D9 /* Check Pods Manifest.lock */,
 				4619844919048DAF00EB4EA6 /* Sources */,
 				4619844A19048DAF00EB4EA6 /* Frameworks */,
 				4619844B19048DAF00EB4EA6 /* Resources */,
+				B333AE7F8ACF4773998EED48 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				469D94D11905707E0061823C /* PBXTargetDependency */,
 			);
 			name = OCDROP;
 			productName = OCDROP;
@@ -217,6 +280,12 @@
 			mainGroup = 4619844419048DAF00EB4EA6;
 			productRefGroup = 4619844E19048DAF00EB4EA6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 469D94C8190570410061823C /* Products */;
+					ProjectRef = 469D94C7190570410061823C /* DAVKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4619844C19048DAF00EB4EA6 /* OCDROP */,
@@ -224,6 +293,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		469D94CD190570410061823C /* DAVKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DAVKit.framework;
+			remoteRef = 469D94CC190570410061823C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		469D94CF190570410061823C /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = 469D94CE190570410061823C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4619844B19048DAF00EB4EA6 /* Resources */ = {
@@ -247,6 +333,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C4CA2C5F137427CA2C952D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B333AE7F8ACF4773998EED48 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4619844919048DAF00EB4EA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -254,6 +373,8 @@
 			files = (
 				4619846419048DAF00EB4EA6 /* AppDelegate.m in Sources */,
 				4619845D19048DAF00EB4EA6 /* main.m in Sources */,
+				469D94D7190579C30061823C /* OCSettings.m in Sources */,
+				469D94C619055A700061823C /* OCStatusItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +393,11 @@
 			isa = PBXTargetDependency;
 			target = 4619844C19048DAF00EB4EA6 /* OCDROP */;
 			targetProxy = 4619847219048DAF00EB4EA6 /* PBXContainerItemProxy */;
+		};
+		469D94D11905707E0061823C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DAVKit;
+			targetProxy = 469D94D01905707E0061823C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,6 +509,7 @@
 		};
 		4619847F19048DAF00EB4EA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9846681F34940A3B060606F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -396,6 +523,7 @@
 		};
 		4619848019048DAF00EB4EA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9846681F34940A3B060606F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -466,6 +594,7 @@
 				4619848019048DAF00EB4EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4619848119048DAF00EB4EA6 /* Build configuration list for PBXNativeTarget "OCDROPTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +603,7 @@
 				4619848319048DAF00EB4EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

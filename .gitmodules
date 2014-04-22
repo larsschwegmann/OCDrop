@@ -1,0 +1,3 @@
+[submodule "DAVKit"]
+	path = DAVKit
+	url = https://github.com/mattrajca/DAVKit.git

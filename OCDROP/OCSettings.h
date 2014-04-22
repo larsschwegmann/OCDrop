@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  OCSettings.h
 //  OCDROP
 //
 //  Created by Lars Schwegmann on 21.04.14.
@@ -8,18 +8,22 @@
 
 //-------------------------------------------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
-#import "OCStatusItemView.h"
-#import "OCSettings.h"
+#import <RFKeychain/RFKeychain.h>
 
 //-------------------------------------------------------------------------------------------------------------
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface OCSettings : NSObject
 
-@property (nonatomic, weak) IBOutlet NSMenu *statusMenu;
-@property (nonatomic, strong) NSStatusItem *statusItem;
-@property (weak) IBOutlet NSMenuItem *preferencesMenuItem;
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *password;
+@property (nonatomic, strong) NSString *baseURL;
+@property (nonatomic, strong) NSString *subdirectoryPath;
+@property (nonatomic, assign) BOOL trustSelfSignedCertificates;
+@property (nonatomic, assign) BOOL shortenURLs;
+
++ (instancetype)sharedInstance;
 
 @end
 

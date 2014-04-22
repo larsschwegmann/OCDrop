@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  OCStatusItemView.h
 //  OCDROP
 //
 //  Created by Lars Schwegmann on 21.04.14.
@@ -10,16 +10,20 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "OCStatusItemView.h"
+#import <DAVKit/DAVKit.h>
+#import <AFNetworking/AFNetworking.h>
+
 #import "OCSettings.h"
 
 //-------------------------------------------------------------------------------------------------------------
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface OCStatusItemView : NSView <NSMenuDelegate, DAVRequestDelegate, NSXMLParserDelegate>
 
-@property (nonatomic, weak) IBOutlet NSMenu *statusMenu;
+@property (nonatomic, strong) DAVSession *davSession;
+
 @property (nonatomic, strong) NSStatusItem *statusItem;
-@property (weak) IBOutlet NSMenuItem *preferencesMenuItem;
+@property (nonatomic, strong) NSImageView *cloudImageView;
+@property (nonatomic, assign) BOOL isMenuVisible;
 
 @end
 
